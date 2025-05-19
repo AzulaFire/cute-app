@@ -17,7 +17,11 @@ export default function MoodAnalytics({ className = '' }) {
   return (
     <div className={`space-y-2 ${className}`}>
       <div className='flex gap-2 flex-wrap ml-4'>
-        <Button variant='outline' onClick={() => setSelectedMood(null)}>
+        <Button
+          variant='outline'
+          className='cursor-pointer'
+          onClick={() => setSelectedMood(null)}
+        >
           All
         </Button>
         {moods.map(([mood, count]) => (
@@ -25,7 +29,7 @@ export default function MoodAnalytics({ className = '' }) {
             key={mood}
             variant='secondary'
             onClick={() => setSelectedMood(mood)}
-            className='capitalize'
+            className='capitalize cursor-pointer'
           >
             {mood} ({count})
           </Button>

@@ -104,7 +104,7 @@ export default function EntryForm() {
       </CardContent>
 
       <CardFooter>
-        <Button className='w-full' onClick={handleSubmit}>
+        <Button className='w-full cursor-pointer' onClick={handleSubmit}>
           Save Entry
         </Button>
       </CardFooter>

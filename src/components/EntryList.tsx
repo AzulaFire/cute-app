@@ -35,7 +35,7 @@ export default function EntryList() {
   return (
     <div className='space-y-4 my-4'>
       {filteredEntries.length > 0 && (
-        <h2 className='text-center font-bold text-lg'>Mood Entries</h2>
+        <h2 className='text-center font-bold text-2xl'>Mood Entries</h2>
       )}
       {filteredEntries.map((e) => (
         <motion.div

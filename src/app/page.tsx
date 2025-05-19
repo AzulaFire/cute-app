@@ -9,16 +9,15 @@ export default function Home() {
   const bgClass = useMoodTheme();
 
   return (
-    // <div className={`min-h-screen p-4 transition-colors ${bgClass}`}>
     <div className={`min-h-screen p-4 transition-colors bg-zinc-100`}>
-      <main className='flex h-screen'>
-        <div className='w-1/2 overflow-y-auto space-y-4'>
+      <main className='flex flex-col md:flex-row h-screen'>
+        <div className='w-full md:w-1/2 space-y-4'>
           <EntryForm />
           <div className='sticky bottom-0 z-10 bg-white py-4'>
             <MoodAnalytics />
           </div>
         </div>
-        <div className='w-1/2 p-4 overflow-y-scroll border-l'>
+        <div className='w-full md:w-1/2 p-4 md:overflow-y-auto border-t md:border-t-0 md:border-l'>
           <EntryList />
         </div>
       </main>
